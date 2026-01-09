@@ -3,40 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprendizado web</title>
+    <title>Projeto Multimídia</title>
 
-    </head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fafdcb;
+            color: #030b20;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #094e92;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        nav{
+            background: #34495e;
+            margin: 20px 0;
+            padding: 10px;
+            border-radius: 5px;
+
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+    nav li { margin: 0 15px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        
+        main { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        section { margin-bottom: 40px; }
+        video, audio { width: 100%; max-width: 500px; display: block; margin-top: 15px; }
+    </style>
+</head>
 <body>
 
-        <header>
-            <h1>Registro de Aprendizado</h1>
-            <h2>Primeira página semântica</h2>
+    <header>
+        <h1>Explorando o Mundo Web</h1>
+        <h2>Multimídia e Estilização</h2>
+        <p>Bem-vindo ao meu projeto! Aqui estou praticando como inserir áudios, vídeos e estilos personalizados.</p>
+    </header>
 
-        </header>
-    
-        <nav>
+    <nav>
+        <ul>
+            <li><a href="#artigo">Sobre HTML</a></li>
+            <li><a href="#midia">Seção Multimídia</a></li>
+            <li><a href="#lista">Aprendizados</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article id="artigo">
+            <h2>A Evolução das Tags</h2>
+            <p>Antigamente, era muito difícil colocar vídeo em uma página. Hoje, com o HTML5, basta uma tag simples para tudo funcionar perfeitamente.</p>
+        </article>
+
+        <section id="midia">
+            <h3>Minha Galeria Multimídia</h3>
+            
+            <h4>Vídeo Demonstrativo</h4>
+            <video controls>
+                <source src="código.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeo.
+            </video>
+
+            <h4>Áudio de Exemplo</h4>
+            <audio controls>
+                <source src="chamber.mp3" type="audio/mpeg">
+                Seu navegador não suporta a reprodução de áudio.
+                <p><small>Créditos: Vídeo de Pexels.com / Áudio de Pixabay Music.</small></p>
+
+            </audio>
+        </section>
+
+        <section id="lista">
+            <h3>O que usei nesta atividade:</h3>
             <ul>
-                <li><a href="#artigo"> Sobre HTML  </a></li>
-                <li><a href="lista"> O que aprendi </a></li>
+                <li>Tags de mídia: <code>&lt;video&gt;</code> e <code>&lt;audio&gt;</code></li>
+                <li>Atributo <code>controls</code> para dar play/pause</li>
+                <li>CSS interno com a tag <code>&lt;style&gt;</code></li>
+                <li>Âncoras de navegação (ID)</li>
             </ul>
-        </nav>
+        </section>
+    </main>
 
-        <main>
-            <article id="artigo">
-                <h2>A importância da semântica</h2>
-                <p>Usar as tags corretas ajuda o Google a encontrar meu site e permite que pessoas com deficiência visual entendam a estrutura da página através de leitores de tela.</p>
-            </article>
-
-            <section id="lista">
-                <h3>Tecnologias que estou estudando </h3>
-                <ul>
-                    <li>HTML</li>
-                <li>CSS</li>
-                <li>Git & GitHub </li>
-                </ul>
-            </section>
-        </main>
-
-    
 </body>
 </html>
